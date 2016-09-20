@@ -1,6 +1,6 @@
 # python 2
 #
-# Name:
+# Name: Alison Cohen
 #
 # Homework 2, Problem 1a and 1b
 # slicing and indexing challenges: Lists and Strings
@@ -32,4 +32,5 @@ print answer3
 
 #problem 4:
 #Creating the list [1,2,3,4,5] from pi and/or e
-answer4 = [e[-0:-3:2]]+
+answer4 = e[3::-2] + pi[::2]
+print answer4
