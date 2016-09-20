@@ -34,3 +34,47 @@ print answer3
 #Creating the list [1,2,3,4,5] from pi and/or e
 answer4 = e[3::-2] + pi[::2]
 print answer4
+
+h = 'harvey'
+m = 'mudd'
+c = 'college'
+
+# problem 5:
+# Creating the string 'heyyou'
+answer5 = h[0] + h[4:] + h[-1] + c[1] + m[1]
+print answer5
+
+#problem 6
+#Creating  the string 'collude'
+answer6 = c[:4] + m[1:3] + c[4:5]
+print answer6
+
+#problem 7
+#Creating the string 'arveyudd'
+answer7 = h[1:] + m[1:]
+print answer7
+
+#problem 8
+#Creating the string 'hardeharharhar'
+answer8 = h[:3]+m[2:3]+h[4:5]+ h[:3]*3
+print answer8
+
+#problem 9
+#Creating the string 'legomyego'
+answer9 = c[3:6] + c[1:2] + m[:1] + h[5:] + c[4:6] + c[1:2]
+print answer9
+
+#problem 10
+#Creating the string 'clearcall'
+answer10 = c[:5:2] + h[1:3] + c[:1] + h[1:2] + c[2:4]
+print answer10
+
+
+p = 'harry potter'
+g = 'hermione granger'
+w = 'ron weasley'
+m = 'draco malfoy'
+
+#problem 11
+#Creating the string 'ginny is cool'
+answer11 = 
