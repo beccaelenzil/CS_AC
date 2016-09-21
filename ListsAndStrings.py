@@ -72,9 +72,10 @@ print answer10
 
 p = 'harry potter'
 g = 'hermione granger'
-w = 'ron weasley'
+w = 'ron weasley '
 m = 'draco malfoy'
 
 #problem 11
-#Creating the string 'ginny is cool'
-answer11 = 
+#Creating the string 'ginny weasley is cool'
+answer11 = g[9::-5] + g[6:7]*2 + w[10:] + w[4:] + g[4:5] + w[7::4] + m[3:5] + m[4:9:4]
+print answer11
