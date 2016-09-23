@@ -117,10 +117,10 @@ def piglatin(s):
 
 
     if s[0] is 'y':
-        if s[0] in vowels:
-            return s + 'way'
-        else:
+        if s[1] in vowels:
             return s[1:] + s[:1] + 'ay'
+        else:
+            return s + 'way'
 
     elif s[0] in vowels:
         return s + 'way'
