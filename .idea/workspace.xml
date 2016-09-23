@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4dcadfb-930a-4721-acc1-2b0d37b22a31" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ListsAndStrings.py" afterPath="$PROJECT_DIR$/ListsAndStrings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Functions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="IntroCS_AC.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,11 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ListsAndStrings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ListsAndStrings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ListsAndStrings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="353">
               <caret line="79" column="83" selection-start-line="79" selection-start-column="83" selection-end-line="79" selection-end-column="83" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Functions.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Functions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2244">
+              <caret line="132" column="50" selection-start-line="132" selection-start-column="50" selection-end-line="132" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -48,6 +59,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/ListsAndStrings.py" />
+        <option value="$PROJECT_DIR$/Functions.py" />
       </list>
     </option>
   </component>
@@ -108,7 +120,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$USER_HOME$" />
   </component>
-  <component name="RunManager" selected="Python.ListsAndStrings">
+  <component name="RunManager" selected="Python.Functions">
     <configuration default="false" name="ListsAndStrings" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -122,6 +134,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="IntroCS_AC" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ListsAndStrings.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Functions" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="IntroCS_AC" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Functions.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -273,12 +302,14 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python.ListsAndStrings" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Functions" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.ListsAndStrings" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.Functions" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ListsAndStrings" />
       </list>
     </recent_temporary>
   </component>
@@ -320,7 +351,15 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/ListsAndStrings.py</url>
+          <line>58</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -328,6 +367,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
           <caret line="79" column="83" selection-start-line="79" selection-start-column="83" selection-end-line="79" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2244">
+          <caret line="132" column="50" selection-start-line="132" selection-start-column="50" selection-end-line="132" selection-end-column="50" />
           <folding />
         </state>
       </provider>
