@@ -37,10 +37,17 @@ print "summedOdds( range(3,10) ): should be 24 == ", summedOdds( range(3,10) )
 
 #problem three
 def mult(n,m):
+    """
+    input: two integers
+    output: the product of the two integers
+    """
 
     result = 0
-    for i in range(0,m):
-        result = result + n
+    for i in range(0,abs(m)):
+        if m > 0:
+            result = result + n
+        else:
+            result = result - n
     return result
 
 print "mult(6,7)    42 ==", mult(6,7)
@@ -50,3 +57,22 @@ print "mult(-6,-7)  42 ==", mult(-6,-7)
 print "mult(6,0)     0 ==", mult(6,0)
 print "mult(0,7)     0 ==", mult(0,7)
 print "mult(0,0)     0 ==", mult(0,0)
+
+#problem four
+def dot( L, K ):
+    """
+    input: two lists
+    output: the dot product of the lists
+    """
+
+    result = 1
+    for i in range(0 ,L[:]):
+        
+
+
+
+print "dot( [5,3], [6,4] )     42.0 ==", dot( [5,3], [6,4] )
+print "dot( [1,2,3,4], [10,100,1000,10000] )  43210.0 ==", dot( [1,2,3,4], [10,100,1000,10000] )
+print "dot( [5,3], [6] )        0.0 ==", dot( [5,3], [6] )
+print "dot( [], [6] )           0.0 ==", dot( [], [6] )
+print "dot( [], [] )            0.0 ==", dot( [], [] )
