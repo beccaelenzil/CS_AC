@@ -1,3 +1,4 @@
+#enhancements: the user enters how many guesses they would like and then the computer gives you that many guesses
 def play():
     import random
 

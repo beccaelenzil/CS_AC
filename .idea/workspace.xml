@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4dcadfb-930a-4721-acc1-2b0d37b22a31" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Loops.py" afterPath="$PROJECT_DIR$/Loops.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Guess My Number" afterPath="$PROJECT_DIR$/Guess My Number" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MultiplicationPracticeGame.py" afterPath="$PROJECT_DIR$/MultiplicationPracticeGame.py" />
     </list>
     <ignored path="IntroCS_AC.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,21 +54,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MultiplicationPracticeGame.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MultiplicationPracticeGame.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MultiplicationPracticeGame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+            <state relative-caret-position="17">
+              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Guess My Number" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Guess My Number" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Guess My Number">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+            <state relative-caret-position="238">
+              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -114,8 +114,8 @@
         <option value="$PROJECT_DIR$/RepeatedTasks.py" />
         <option value="$PROJECT_DIR$/For Loops.py" />
         <option value="$PROJECT_DIR$/Loops.py" />
-        <option value="$PROJECT_DIR$/Guess My Number" />
         <option value="$PROJECT_DIR$/MultiplicationPracticeGame.py" />
+        <option value="$PROJECT_DIR$/Guess My Number" />
       </list>
     </option>
   </component>
@@ -585,10 +585,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Guess My Number">
+    <entry file="file://$PROJECT_DIR$/MultiplicationPracticeGame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+        <state relative-caret-position="17">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -601,10 +601,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MultiplicationPracticeGame.py">
+    <entry file="file://$PROJECT_DIR$/Guess My Number">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        <state relative-caret-position="238">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
           <folding />
         </state>
       </provider>

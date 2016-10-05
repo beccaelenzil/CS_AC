@@ -16,7 +16,7 @@ def play():
             while userAnswer != correctAnswer:
                 userAnswer = raw_input("Please enter the product of " +str(factor1) + " and " +str(factor2) + ":")
                 try:
-                     userAnswer = int(userAnswer)
+                    userAnswer = int(userAnswer)
                     if userAnswer == correctAnswer:
                         print "Correct"
 
