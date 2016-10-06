@@ -124,7 +124,7 @@ print "count9([1, 9, 9, 3, 9]), 3 == ",count9([1, 9, 9, 3, 9])
 
 
 #challenge problems
-
+""""""
 #problem one
 def printRect(W, H, S):
     """
@@ -136,6 +136,6 @@ def printRect(W, H, S):
 
     for i in H:
 
-        W = 
+        W = 5
 
 printRect( 4, 6, '%' )
