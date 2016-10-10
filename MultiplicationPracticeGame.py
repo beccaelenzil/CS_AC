@@ -8,7 +8,7 @@ def play():
 
             print "high: ", high
 
-            factor1 = random.r  andint(0,10)
+            factor1 = random.randint(0,10)
             factor2 = random.randint(0,high)
             userAnswer = -1
             correctAnswer = factor1*factor2
