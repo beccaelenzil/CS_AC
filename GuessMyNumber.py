@@ -15,6 +15,7 @@ def play():
     print "okay cool, you have", score, "guesses to win"
 
     while score > 0 and useranswer != correctanswer:
+        print
         print "guesses remaining =", score
         useranswer = raw_input("enter your guess")
         try:
@@ -29,6 +30,7 @@ def play():
                 score += -1
         except:
             print "enter an integer"
+
 
 
     if score == 0:

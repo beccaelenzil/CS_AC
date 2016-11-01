@@ -6,7 +6,7 @@ def play():
     for j in range(2):
         for i in range(5):
 
-            print "high: ", high
+            #print "high: ", high
 
             factor1 = random.randint(0,10)
             factor2 = random.randint(0,high)
