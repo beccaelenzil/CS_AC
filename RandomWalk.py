@@ -48,7 +48,7 @@ def rwsteps( start, low, high ):
 
     return counter
 
-#print rwsteps( 10, 5, 15 )
+rwsteps( 10, 5, 15 )
 
 def rwposPlain(start, nsteps):
     """ Function that simulates a sleepwalker. The sleepwalker starts at start, an integer representing

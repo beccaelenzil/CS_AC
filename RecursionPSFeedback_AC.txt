@@ -1,3 +1,23 @@
 Total Score: Late -1, did not commit changes on time
 
 Total Score: 0/6 .. you need to sync github so I can see your work
+
+Total Score: 5/6
+Notes:
+-------------------------------------
+Problem 1) Recursive Drawing: 3/3
+Notes:
+
+-------------------------------------
+Problem 2) Recursive Functions: 3/3
+Notes:
+
+# Fibonnaci Tests
+fib(5) == 5 =  5  :  True
+fib(11) == 89 =  89  :  True
+fibIter(5) == 5 =  5  :  True
+fibIter(11) == 89 =  89  :  True
+
+# List Reverse Tests
+listReverse([1,2,3,4]) == [4,3,2,1] =  [4, 3, 2, 1]  :  True
+listReverseIter([1,2,3,4]) == [4,3,2,1] =  [4, 3, 2, 1]  :  True
