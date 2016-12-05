@@ -15,6 +15,9 @@ def camel():
     drinks = 3
 
     while done == False:
+        distance =  traveled - nativeDistance
+        randint = random.randint(0,21)
+
         print "A. Drink from your canteen."
         print "B. Ahead moderate speed."
         print "C. Ahead full speed."
@@ -27,27 +30,60 @@ def camel():
         input = input.upper()
         if input == "Q":
             done = True
+        elif input == "A":
+            drinks += -1
+            thirst = 0
         elif input == "B":
-           traveled += random.randint(5,13)
-           nativeDistance += random.randint(7,15)
-           thirst += 1
-           tiredness += 1
+            newtravel = random.randint(5,13)
+            traveled += newtravel
+            nativeDistance += random.randint(7,14)
+            thirst += 1
+            tiredness += 1
+            print "you traveled", newtravel, "miles"
         elif input == "C":
-           traveled += random.randint(10,21)
-           nativeDistance += random.randint(7,15)
-           thirst += 1
-           tiredness += random.randint(1,4)
+            newtraveled = random.randint(10,21)
+            traveled += newtraveled
+            nativeDistance += random.randint(7,14)
+            thirst += 1
+            tiredness += random.randint(1,4)
+            print "you traveled" , newtraveled , "miles"
         elif input == "D":
             tiredness = 0
             nativeDistance += random.randint(7,15)
-            print "Your camel is now rested, but the natives are", nativeDistance*-1, "miles behind you!"
+            print "Your camel is now rested, but the natives are", distance, "miles behind you!"
         elif input == "E":
             print "Miles traveled: " , traveled
             print "Drinks in canteen: ", drinks
-            print "The natives are" , nativeDistance*-1, "miles behind you"
+            print "The natives are" , distance, "miles behind you"
+
+        if randint == 21:
+            print "You have found an oasis! your camel is rested and your thirst is quenched."
+            tiredness = 0
+            thirst = 0
+
+        if 6 > thirst >= 4:
+            print "you are thirsty!"
+        elif thirst >= 6:
+            print "You died of thirst."
+            done = True
+
+        if 8 > tiredness >= 5 and done == False:
+            print "Your camel is getting tired!"
+        elif tiredness >= 8 and done == False:
+            print "Your camel died."
+            done = True
+
+        if 10 >= distance < 0 and done == False:
+            print "The natives are getting close!"
+        elif distance <= 10 and done == False:
+            print "The natives have caught up."
+            done = True
+
+
+        if traveled >= 200 and done == False:
+            print "You made it across the desert! You won!"
 
         print
-
 
 instructions()
 camel()
