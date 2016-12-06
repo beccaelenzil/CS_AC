@@ -1,6 +1,8 @@
 Week 1 (11/30-12/2)
 Completed camel game
 
+Feedback from Becca - Your choice A is missing a check to see if there are enough drinks left in the canteen
+
 Week 2 (12/5-12/11)
 
 Week 3 (12/12 - 12/16)
