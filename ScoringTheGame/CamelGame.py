@@ -33,20 +33,24 @@ def camel():
         elif input == "A":
             drinks += -1
             thirst = 0
+            if drinks > 0:
+                print "Your thirst has been quenched. You have", drinks, "left in your canteen."
+            elif drinks == 0:
+                print "You are out of drinks!"
         elif input == "B":
             newtravel = random.randint(5,13)
             traveled += newtravel
             nativeDistance += random.randint(7,14)
             thirst += 1
             tiredness += 1
-            print "you traveled", newtravel, "miles"
+            print "You traveled", newtravel, "miles"
         elif input == "C":
             newtraveled = random.randint(10,21)
             traveled += newtraveled
             nativeDistance += random.randint(7,14)
             thirst += 1
             tiredness += random.randint(1,4)
-            print "you traveled" , newtraveled , "miles"
+            print "You traveled" , newtraveled , "miles"
         elif input == "D":
             tiredness = 0
             nativeDistance += random.randint(7,15)
@@ -62,7 +66,7 @@ def camel():
             thirst = 0
 
         if 6 > thirst >= 4:
-            print "you are thirsty!"
+            print "You are thirsty!"
         elif thirst >= 6:
             print "You died of thirst."
             done = True

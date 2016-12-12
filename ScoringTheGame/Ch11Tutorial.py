@@ -1,13 +1,10 @@
 import pygame
-import math
 
 # Define some colors
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 GREEN = (0, 255, 0)
 RED = (255, 0, 0)
-BLUE = (0, 0, 255)
-PI = math.pi
 
 pygame.init()
 
@@ -23,12 +20,21 @@ done = False
 # Used to manage how fast the screen updates
 clock = pygame.time.Clock()
 
+#load images
+background_image = pygame.image.load("sky_image.jpg").convert()
+player_image = pygame.image.load("hot_air_balloon.png").convert()
+player_image.set_colorkey(WHITE)
+#click_sound = pygame.mixer.Sound("Chirp.wav")
+
+
 # -------- Main Program Loop -----------
 while not done:
     # --- Main event loop
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             done = True
+        #elif event.type == pygame.MOUSEBUTTONDOWN:
+            #click_sound.play()
 
     # --- Game logic should go here
 
@@ -39,21 +45,19 @@ while not done:
 
     # If you want a background image, replace this clear with blit'ing the
     # background image.
-    screen.fill(WHITE)
+    screen.blit(background_image, [0, 0])
+
+    # Get the current mouse position. This returns the position
+    # as a list of two numbers.
+    player_position = pygame.mouse.get_pos()
+    x = player_position[0]
+    y = player_position[1]
+
+    # Copy image to screen:
+    screen.blit(player_image, [x, y])
+
 
     # --- Drawing code should go here
-    # Select the font to use, size, bold, italics
-    font = pygame.font.SysFont('Calibri', 25)#, True, False)
-
-    # Render the text. "True" means anti-aliased text.
-    # Black is the color. The variable BLACK was defined
-    # above as a list of [0, 0, 0]
-    # Note: This line creates an image of the letters,
-    # but does not put it on the screen yet.
-    text = font.render("My text",True,BLACK)
-
-    # Put the image of the text on the screen at 250x250
-    screen.blit(text, [250, 250])
 
     # --- Go ahead and update the screen with what we've drawn.
     pygame.display.flip()
@@ -63,3 +67,5 @@ while not done:
 
 # Close the window and quit.
 pygame.quit()
+
+
