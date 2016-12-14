@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4dcadfb-930a-4721-acc1-2b0d37b22a31" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial_snow.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ScoringTheGame/CityGame.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial.py" afterPath="$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial_box.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScoringTheGame/log.txt" afterPath="$PROJECT_DIR$/ScoringTheGame/log.txt" />
     </list>
@@ -24,44 +26,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SegregationModel.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SegregationModel.py">
+      <file leaf-file-name="Ch8Tutorial_box.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial_box.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="408">
+              <caret line="75" column="4" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="log.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ScoringTheGame/log.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="77" selection-start-line="10" selection-start-column="77" selection-end-line="10" selection-end-column="77" />
-              <folding />
-            </state>
+      <file leaf-file-name="hot_air_balloon.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScoringTheGame/hot_air_balloon.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="CamelGame.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ScoringTheGame/CamelGame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="85">
               <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ch5Tutorial.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScoringTheGame/Ch5Tutorial.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -70,38 +57,32 @@
         <entry file="file://$PROJECT_DIR$/ScoringTheGame/Ch11Tutorial.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
-              <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+              <caret line="25" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ch8Tutorial.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial.py">
+      <file leaf-file-name="Ch8Tutorial_snow.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial_snow.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="124">
+              <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="58" />
+              <folding>
+                <element signature="e#237#250#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sysfont.py" pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/pygame/sysfont.py">
+      <file leaf-file-name="CityGame.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ScoringTheGame/CityGame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="554" column="0" selection-start-line="554" selection-start-column="0" selection-end-line="554" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Guess My Number" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IntroCS/Guess My Number">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="340">
+              <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -136,8 +117,10 @@
         <option value="$PROJECT_DIR$/ScoringTheGame/Ch5Tutorial.py" />
         <option value="$PROJECT_DIR$/ScoringTheGame/CamelGame.py" />
         <option value="$PROJECT_DIR$/ScoringTheGame/Ch11Tutorial.py" />
-        <option value="$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial.py" />
         <option value="$PROJECT_DIR$/ScoringTheGame/log.txt" />
+        <option value="$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial.py" />
+        <option value="$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial_snow.py" />
+        <option value="$PROJECT_DIR$/ScoringTheGame/CityGame.py" />
       </list>
     </option>
   </component>
@@ -213,41 +196,7 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.Ch8Tutorial">
-    <configuration default="false" name="RandomWalk" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="IntroCS_AC" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RandomWalk.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="CamelGame" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ScoringTheGame" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="IntroCS_AC" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScoringTheGame/CamelGame.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.CityGame">
     <configuration default="false" name="Ch5Tutorial" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -294,7 +243,41 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="IntroCS_AC" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial_box.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Ch8Tutorial_snow" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ScoringTheGame" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="IntroCS_AC" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial_snow.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CityGame" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ScoringTheGame" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="IntroCS_AC" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScoringTheGame/CityGame.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -447,19 +430,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.RandomWalk" />
-      <item index="1" class="java.lang.String" itemvalue="Python.CamelGame" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Ch5Tutorial" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Ch11Tutorial" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Ch8Tutorial" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Ch5Tutorial" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Ch11Tutorial" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Ch8Tutorial" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Ch8Tutorial_snow" />
+      <item index="4" class="java.lang.String" itemvalue="Python.CityGame" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Ch8Tutorial" />
+        <item index="0" class="java.lang.String" itemvalue="Python.CityGame" />
         <item index="1" class="java.lang.String" itemvalue="Python.Ch11Tutorial" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Ch5Tutorial" />
-        <item index="3" class="java.lang.String" itemvalue="Python.CamelGame" />
-        <item index="4" class="java.lang.String" itemvalue="Python.RandomWalk" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Ch8Tutorial_snow" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Ch8Tutorial" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Ch5Tutorial" />
       </list>
     </recent_temporary>
   </component>
@@ -509,14 +492,11 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MultiplicationPracticeGame.py" />
-    <entry file="file://$PROJECT_DIR$/Guess My Number" />
-    <entry file="file://$PROJECT_DIR$/ListsAndStrings.py" />
     <entry file="file://$PROJECT_DIR$/Functions.py" />
     <entry file="file://$PROJECT_DIR$/Loops.py" />
     <entry file="file://$PROJECT_DIR$/MultiplicationPracticeGame.py" />
@@ -551,7 +531,12 @@
     <entry file="file://$PROJECT_DIR$/RecursiveFunctions.py" />
     <entry file="file://$PROJECT_DIR$/RandomWalk.py" />
     <entry file="file://$PROJECT_DIR$/ElectoralResultsSimulation.py" />
-    <entry file="file://$PROJECT_DIR$/SegregationModel.py">
+    <entry file="file://$PROJECT_DIR$/RecursionPSFeedback_AC.txt" />
+    <entry file="file://$PROJECT_DIR$/ps3fbdk_AC.txt" />
+    <entry file="file://$PROJECT_DIR$/GuessMyNumber.py" />
+    <entry file="file://$PROJECT_DIR$/problemSet2Feedback_AC.txt" />
+    <entry file="file://$PROJECT_DIR$/RepeatedTasks.py" />
+    <entry file="file://$PROJECT_DIR$/IntroCS/Guess My Number">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -559,12 +544,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RecursionPSFeedback_AC.txt" />
-    <entry file="file://$PROJECT_DIR$/ps3fbdk_AC.txt" />
-    <entry file="file://$PROJECT_DIR$/GuessMyNumber.py" />
-    <entry file="file://$PROJECT_DIR$/problemSet2Feedback_AC.txt" />
-    <entry file="file://$PROJECT_DIR$/RepeatedTasks.py" />
-    <entry file="file://$PROJECT_DIR$/IntroCS/Guess My Number">
+    <entry file="file://$PROJECT_DIR$/../PycharmProjects/untitled/sky image.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Ch5Tutorial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="77" selection-start-line="10" selection-start-column="77" selection-end-line="10" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SegregationModel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -580,50 +583,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../PycharmProjects/untitled/sky image.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScoringTheGame/CamelGame.py">
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial_box.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        <state relative-caret-position="408">
+          <caret line="75" column="4" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Ch5Tutorial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/hot_air_balloon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ScoringTheGame/Ch11Tutorial.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <caret line="25" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial.py">
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial_snow.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+        <state relative-caret-position="124">
+          <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="58" />
+          <folding>
+            <element signature="e#237#250#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/CamelGame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScoringTheGame/log.txt">
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/CityGame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="77" selection-start-line="10" selection-start-column="77" selection-end-line="10" selection-end-column="77" />
-          <folding />
+        <state relative-caret-position="340">
+          <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

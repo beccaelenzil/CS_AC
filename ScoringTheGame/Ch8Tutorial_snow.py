@@ -10,6 +10,7 @@
 """
 
 import pygame
+import random
 
 # Define some colors
 BLACK = (0, 0, 0)
@@ -31,6 +32,14 @@ done = False
 # Used to manage how fast the screen updates
 clock = pygame.time.Clock()
 
+snow_list = []
+
+for i in range(50):
+    x = random.randrange(0, 700)
+    y = random.randrange(0, 500)
+    snow_list.append([x, y])
+
+
 # -------- Main Program Loop -----------
 while not done:
     # --- Main event loop
@@ -47,9 +56,26 @@ while not done:
 
     # If you want a background image, replace this clear with blit'ing the
     # background image.
-    screen.fill(WHITE)
+    screen.fill(BLACK)
 
     # --- Drawing code should go here
+    # Process each snow flake in the list
+
+    # Process each snow flake in the list
+    for i in range(len(snow_list)):
+        # Draw the snow flake
+        pygame.draw.circle(screen, WHITE, snow_list[i], 2)
+        # Move the snow flake down one pixel
+        snow_list[i][1] += 1
+
+        # If the snow flake has moved off the bottom of the screen
+        if snow_list[i][1] > 500:
+            # Reset it just above the top
+            y = random.randrange(-50, -10)
+            snow_list[i][1] = y
+            # Give it a new x position
+            x = random.randrange(0, 700)
+            snow_list[i][0] = x
 
     # --- Go ahead and update the screen with what we've drawn.
     pygame.display.flip()
