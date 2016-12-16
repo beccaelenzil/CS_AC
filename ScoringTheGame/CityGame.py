@@ -78,12 +78,12 @@ while not done:
     # --- Drawing code should go here
     # Process each snow flake in the list
     for i in range(len(blding_list)):
-        if xPos >= 0:
-            blding = random.randrange(0,3)
-            print blding
+        #if xPos >= 0:
+            #blding = random.randrange(0,3)
+            #print blding
 
         # Draw the building
-        
+
         screen.blit(blding_list[blding], [xPos, yPos])
 
         # Move the snow flake down one pixel
