@@ -21,11 +21,76 @@ done = False
 # Used to manage how fast the screen updates
 clock = pygame.time.Clock()
 
+class Blding():
+    def __init__(self):
+        self.height = 0
+        self.width = 0
+        self.image = ""
+        self.number = 0
+        self.x = -self.width
+        self.y = 500-self.height
+
+    def move(self):
+        self.number = random.randint(0,3)
+        for i in self.x<700:
+            self.x += 0.1
+
+
+
+
+
+move(blding1)
+
+
+            #if xPos >= 0:
+                #blding = random.randrange(0,3)
+                #print blding
+
+            # Draw the building
+
+            screen.blit(blding_list[blding], [xPos, yPos])
+
+            # Move the buliding over one pixel
+            xPos +=0.01
+            #print xPos
+
+            """
+            # If the snow flake has moved off the bottom of the screen
+            if snow_list[i][1] > 500:
+                # Reset it just above the top
+                y = random.randrange(-50, -10)
+                snow_list[i][1] = y
+                # Give it a new x position
+                x = random.randrange(0, 700)
+                snow_list[i][0] = x
+             """
+
+blding1 = Blding()
+blding1.height = 100
+blding1.width = 50
+blding1.image = pygame.image.load("images/100x50.png").convert()
+blding1.number = 1
+
+
+blding2 = Blding()
+blding2.height = 125
+blding2.width = 150
+blding2.image = pygame.image.load("images/100x50.png").convert()
+blding2.number = 2
+
+blding3 = Blding()
+blding3.height = 225
+blding3.width = 75
+blding3.image = pygame.image.load("images/225x75.png").convert()
+blding3.number = 3
+
+
+
 #load images
-background_image = pygame.image.load("city_scape_bgd.png").convert()
-blding1 = pygame.image.load("225x75.png").convert()
-blding2 = pygame.image.load("100x50.png").convert()
-blding3 = pygame.image.load("125x150.png").convert()
+background_image = pygame.image.load('images/city_scape_bgd.png').convert()
+#blding3 = pygame.image.load("images/225x75.png").convert()
+#blding1 = pygame.image.load("images/100x50.png").convert()
+#blding2 = pygame.image.load("images/125x150.png").convert()
 
 #player_image = pygame.image.load("225x75.png").convert()
 #player_image.set_colorkey(WHITE)
@@ -73,33 +138,10 @@ while not done:
 
     # Copy image to screen:
     #screen.blit(player_image, [x, y])
-
+    screen.blit(blding_list[blding], [xPos, yPos])
 
     # --- Drawing code should go here
     # Process each snow flake in the list
-    for i in range(len(blding_list)):
-        #if xPos >= 0:
-            #blding = random.randrange(0,3)
-            #print blding
-
-        # Draw the building
-
-        screen.blit(blding_list[blding], [xPos, yPos])
-
-        # Move the snow flake down one pixel
-        xPos +=0.01
-        #print xPos
-
-        """
-        # If the snow flake has moved off the bottom of the screen
-        if snow_list[i][1] > 500:
-            # Reset it just above the top
-            y = random.randrange(-50, -10)
-            snow_list[i][1] = y
-            # Give it a new x position
-            x = random.randrange(0, 700)
-            snow_list[i][0] = x
-         """
 
 
     # --- Go ahead and update the screen with what we've drawn.

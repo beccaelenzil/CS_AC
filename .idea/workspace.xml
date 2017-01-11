@@ -2,10 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4dcadfb-930a-4721-acc1-2b0d37b22a31" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ScoringTheGame/city_game/CityGame_Classes.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ScoringTheGame/100x50.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ScoringTheGame/125x150.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ScoringTheGame/225x75.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ScoringTheGame/CamelGame.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ScoringTheGame/Ch10Tutorial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ScoringTheGame/Ch11Tutorial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ScoringTheGame/Ch5Tutorial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial_box.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial_snow.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ScoringTheGame/Chirp.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ScoringTheGame/CityGame.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ScoringTheGame/bird.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ScoringTheGame/building-one-225-x-75.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ScoringTheGame/city scape bgd-Recovered.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ScoringTheGame/city scape bgd.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ScoringTheGame/city scape bgdd.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ScoringTheGame/city_scape_bgd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ScoringTheGame/hot_air_balloon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ScoringTheGame/log.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ScoringTheGame/sky_image.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScoringTheGame/Ch10Tutorial.py" afterPath="$PROJECT_DIR$/ScoringTheGame/Ch10Tutorial.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScoringTheGame/Ch11Tutorial.py" afterPath="$PROJECT_DIR$/ScoringTheGame/Ch11Tutorial.py" />
     </list>
     <ignored path="IntroCS_AC.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,43 +44,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Ch8Tutorial_box.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial_box.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScoringTheGame/log.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ch8Tutorial_snow.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial_snow.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="58" />
-              <folding>
-                <element signature="e#237#250#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CityGame.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScoringTheGame/CityGame.py">
+        <entry file="file://$PROJECT_DIR$/ScoringTheGame/city_game/CityGame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+            <state relative-caret-position="425">
+              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -69,23 +56,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ch11Tutorial.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ScoringTheGame/Ch11Tutorial.py">
+      <file leaf-file-name="CityGame_Classes.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ScoringTheGame/city_game/CityGame_Classes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+            <state relative-caret-position="-1054">
+              <caret line="41" column="12" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CamelGame.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScoringTheGame/tutorials/CamelGame.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="42" column="50" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ch10Tutorial.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScoringTheGame/Ch10Tutorial.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1972">
-              <caret line="116" column="10" selection-start-line="116" selection-start-column="10" selection-end-line="116" selection-end-column="10" />
-              <folding />
-            </state>
+      <file leaf-file-name="100x50.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScoringTheGame/city_game/images/100x50.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="125x150.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScoringTheGame/city_game/images/125x150.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="225x75.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScoringTheGame/city_game/images/225x75.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="city scape bgd.psd" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScoringTheGame/city_game/images/city scape bgd.psd">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -120,10 +137,12 @@
         <option value="$PROJECT_DIR$/ScoringTheGame/CamelGame.py" />
         <option value="$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial.py" />
         <option value="$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial_snow.py" />
-        <option value="$PROJECT_DIR$/ScoringTheGame/CityGame.py" />
         <option value="$PROJECT_DIR$/ScoringTheGame/log.txt" />
         <option value="$PROJECT_DIR$/ScoringTheGame/Ch10Tutorial.py" />
         <option value="$PROJECT_DIR$/ScoringTheGame/Ch11Tutorial.py" />
+        <option value="$PROJECT_DIR$/ScoringTheGame/CityGame.py" />
+        <option value="$PROJECT_DIR$/ScoringTheGame/city_game/CityGame.py" />
+        <option value="$PROJECT_DIR$/ScoringTheGame/city_game/CityGame_Classes.py" />
       </list>
     </option>
   </component>
@@ -189,6 +208,50 @@
               <option name="myItemId" value="ScoringTheGame" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tutorials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IntroCS_AC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IntroCS_AC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScoringTheGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="city_game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IntroCS_AC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IntroCS_AC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScoringTheGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="city_game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -199,7 +262,7 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.Ch11Tutorial">
+  <component name="RunManager" selected="Python.CityGame_Classes">
     <configuration default="false" name="Ch11Tutorial" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -213,40 +276,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="IntroCS_AC" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScoringTheGame/Ch11Tutorial.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Ch8Tutorial" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ScoringTheGame" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="IntroCS_AC" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial_box.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Ch8Tutorial_snow" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ScoringTheGame" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="IntroCS_AC" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial_snow.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -281,6 +310,40 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="IntroCS_AC" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScoringTheGame/Ch10Tutorial.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CityGame (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ScoringTheGame/city_game" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="IntroCS_AC" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScoringTheGame/city_game/CityGame.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CityGame_Classes" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ScoringTheGame/city_game" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="IntroCS_AC" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScoringTheGame/city_game/CityGame_Classes.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -434,18 +497,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.Ch11Tutorial" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Ch8Tutorial" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Ch8Tutorial_snow" />
-      <item index="3" class="java.lang.String" itemvalue="Python.CityGame" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Ch10Tutorial" />
+      <item index="1" class="java.lang.String" itemvalue="Python.CityGame" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Ch10Tutorial" />
+      <item index="3" class="java.lang.String" itemvalue="Python.CityGame (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.CityGame_Classes" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Ch11Tutorial" />
-        <item index="1" class="java.lang.String" itemvalue="Python.CityGame" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Ch10Tutorial" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Ch8Tutorial_snow" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Ch8Tutorial" />
+        <item index="0" class="java.lang.String" itemvalue="Python.CityGame_Classes" />
+        <item index="1" class="java.lang.String" itemvalue="Python.CityGame (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.CityGame" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Ch11Tutorial" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Ch10Tutorial" />
       </list>
     </recent_temporary>
   </component>
@@ -457,12 +520,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32064834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.037328094" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2435105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2435105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -488,29 +551,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/ScoringTheGame/CamelGame.py</url>
-          <line>6</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/ScoringTheGame/CityGame.py</url>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Loops.py" />
-    <entry file="file://$PROJECT_DIR$/MultiplicationPracticeGame.py" />
-    <entry file="file://$PROJECT_DIR$/Guess My Number" />
-    <entry file="file://$PROJECT_DIR$/RecursiveFunctions.py" />
-    <entry file="file://$PROJECT_DIR$/ps3fbdk_AC.txt" />
-    <entry file="file://$PROJECT_DIR$/GuessMyNumber.py" />
-    <entry file="file://$PROJECT_DIR$/problemSet2Feedback_AC.txt" />
     <entry file="file://$PROJECT_DIR$/RepeatedTasks.py" />
     <entry file="file://$PROJECT_DIR$/ListsAndStrings.py" />
     <entry file="file://$PROJECT_DIR$/Functions.py" />
@@ -571,16 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial_snow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="58" />
-          <folding>
-            <element signature="e#237#250#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ScoringTheGame/CamelGame.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -594,18 +629,26 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScoringTheGame/log.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial_box.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/CityGame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Ch11Tutorial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -618,21 +661,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScoringTheGame/CityGame.py">
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Ch8Tutorial_snow.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+        <state relative-caret-position="747">
+          <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/city_game/images/city scape bgd.psd">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/city_game/images/225x75.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/city_game/images/125x150.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/city_game/images/100x50.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/tutorials/CamelGame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="50" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/city_game/CityGame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Ch11Tutorial.py">
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/city_game/CityGame_Classes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-          <folding />
+        <state relative-caret-position="-1054">
+          <caret line="41" column="12" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
