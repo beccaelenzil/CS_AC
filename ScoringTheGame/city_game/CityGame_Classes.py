@@ -21,8 +21,11 @@ done = False
 # Used to manage how fast the screen updates
 clock = pygame.time.Clock()
 
-class Blding():
+class Blding(pygame.sprite.Sprite):
     def __init__(self):
+
+        super().__init__()
+
         self.height = 0
         self.width = 0
         self.image = ""
@@ -31,15 +34,12 @@ class Blding():
         self.y = 500-self.height
 
     def move(self):
-        self.number = random.randint(0,3)
         for i in self.x<700:
             self.x += 0.1
 
+    def randBlding(self):
+        
 
-
-
-
-move(blding1)
 
 
             #if xPos >= 0:
@@ -48,10 +48,10 @@ move(blding1)
 
             # Draw the building
 
-            screen.blit(blding_list[blding], [xPos, yPos])
+            #screen.blit(blding_list[blding], [xPos, yPos])
 
             # Move the buliding over one pixel
-            xPos +=0.01
+            #xPos +=0.01
             #print xPos
 
             """
@@ -84,31 +84,18 @@ blding3.width = 75
 blding3.image = pygame.image.load("images/225x75.png").convert()
 blding3.number = 3
 
-
-
-#load images
-background_image = pygame.image.load('images/city_scape_bgd.png').convert()
-#blding3 = pygame.image.load("images/225x75.png").convert()
-#blding1 = pygame.image.load("images/100x50.png").convert()
-#blding2 = pygame.image.load("images/125x150.png").convert()
-
-#player_image = pygame.image.load("225x75.png").convert()
-#player_image.set_colorkey(WHITE)
-#click_sound = pygame.mixer.Sound("Chirp.wav")
+aBlding = Blding()
+aBlding.number = random.randint(0,3)
 
 blding_list = [blding1, blding2, blding3]
-height = 225
-width = 75
-blding = 0
+blding = random.choice(blding_list)
+print blding
+#load images
+background_image = pygame.image.load('images/city_scape_bgd.png').convert()
 
-for i in range(50):
-    x = random.randrange(0, 700)
-    y = random.randrange(0, 500)
-    blding_list.append([x, y])
 
-xPos = -width
-yPos = 500 - height
-
+xPos = -aBlding.width
+yPos = aBlding.height
 
 # -------- Main Program Loop -----------
 while not done:
@@ -138,11 +125,11 @@ while not done:
 
     # Copy image to screen:
     #screen.blit(player_image, [x, y])
-    screen.blit(blding_list[blding], [xPos, yPos])
+    screen.blit(aBlding.image, [xPos, yPos])
 
     # --- Drawing code should go here
     # Process each snow flake in the list
-
+    aBlding.move()
 
     # --- Go ahead and update the screen with what we've drawn.
     pygame.display.flip()
