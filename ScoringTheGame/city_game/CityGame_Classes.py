@@ -24,7 +24,7 @@ clock = pygame.time.Clock()
 class Blding(pygame.sprite.Sprite):
     def __init__(self):
 
-        super().__init__()
+        super()__init__()
 
         self.height = 0
         self.width = 0
@@ -38,32 +38,6 @@ class Blding(pygame.sprite.Sprite):
             self.x += 0.1
 
     def randBlding(self):
-        
-
-
-
-            #if xPos >= 0:
-                #blding = random.randrange(0,3)
-                #print blding
-
-            # Draw the building
-
-            #screen.blit(blding_list[blding], [xPos, yPos])
-
-            # Move the buliding over one pixel
-            #xPos +=0.01
-            #print xPos
-
-            """
-            # If the snow flake has moved off the bottom of the screen
-            if snow_list[i][1] > 500:
-                # Reset it just above the top
-                y = random.randrange(-50, -10)
-                snow_list[i][1] = y
-                # Give it a new x position
-                x = random.randrange(0, 700)
-                snow_list[i][0] = x
-             """
 
 blding1 = Blding()
 blding1.height = 100
