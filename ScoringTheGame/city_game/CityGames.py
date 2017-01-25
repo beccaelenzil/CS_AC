@@ -27,7 +27,14 @@ class Building(pygame.sprite.Sprite):
 
 
 class Person():
-    pass
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+        self.x = 700
+        self.y = 500-height
+    def jump(self):
+
+
 
 
 class Scene():
@@ -146,9 +153,13 @@ clock = pygame.time.Clock()
 background_image = pygame.image.load('images/city_scape_bgd.png').convert()
 
 building_props = [
-    { 'width': 50, 'height': 100, 'image': pygame.image.load("images/100x50.png").convert() },
+    { 'width': 50, 'height': 100, 'image': pygame.image.load("images/50x100.png").convert() },
     { 'width': 125, 'height': 100, 'image': pygame.image.load("images/125x150.png").convert() },
-    { 'width': 75, 'height': 225, 'image': pygame.image.load("images/225x75.png").convert() },
+    { 'width': 100, 'height': 175, 'image': pygame.image.load("images/100x175.png").convert() },
+    { 'width': 75, 'height': 150, 'image': pygame.image.load("images/75x150.png").convert() },
+    { 'width': 75, 'height': 225, 'image': pygame.image.load("images/75x225.png").convert() },
+    { 'width': 100, 'height': 250, 'image': pygame.image.load("images/100x250.png").convert() },
+
 ]
 
 game = Game()
