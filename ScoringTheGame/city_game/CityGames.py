@@ -28,11 +28,13 @@ class Building(pygame.sprite.Sprite):
 
 
 class Person():
-    def __init__(self, width, height):
+    def __init__(self, width, height, image):
         self.width = width
         self.height = height
-        self.x = 700
-        self.y = 500-height
+        self.image = image
+
+    def move(self, delta = 0.5):
+        self.x += delta
 
     def jump(self):
        if self.event.type == pygame.K_SPACE or self.event.type == pygame.K_UP:
@@ -46,7 +48,7 @@ class Scene():
         self.height = height
         self.screen = screen
         x = width
-        while x > 125:
+        while x > 100:
             building = self.create_building()
             building.move(x)
             building.draw(screen)
@@ -62,13 +64,15 @@ class Scene():
         if self.can_new_building_be_created():
             self.create_building()
 
+
+    #building directions
+
     def can_new_building_be_created(self):
         most_recent_building = self.buildings[-1]
         if self.building_is_on_screen(most_recent_building):
             return True
         else:
             return False
-
 
     def create_building(self):
         num_buildings = len(building_props)
@@ -92,6 +96,13 @@ class Scene():
             return True
         else:
             return False
+
+    #person directions
+
+    def create_person(self):
+        props = building_props[0]
+        person = Person(0, props['height'], props['image'])
+        return person
 
 
 
@@ -169,6 +180,10 @@ building_props = [
     { 'width': 75, 'height': 225, 'image': pygame.image.load("images/75x225.png").convert() },
     { 'width': 100, 'height': 250, 'image': pygame.image.load("images/100x250.png").convert() },
 
+]
+
+person_props = [
+    {'width': 30, 'height':30, 'image':pygame.image.load("images/dude.png").convert() }
 ]
 
 game = Game()
