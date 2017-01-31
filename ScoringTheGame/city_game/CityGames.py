@@ -46,11 +46,11 @@ class Scene():
         self.height = height
         self.screen = screen
         x = width
-        while x > 0:
+        while x > 125:
             building = self.create_building()
             building.move(x)
             building.draw(screen)
-            x -= random.randint(width + 10, width+50)
+            x -= random.randint(building.width+10, building.width+50)
 
     def next_tick(self):
         for building in self.buildings:
@@ -74,7 +74,7 @@ class Scene():
         num_buildings = len(building_props)
         building_props_index = random.randint(0, num_buildings - 1)
         props = building_props[building_props_index]
-        building = Building(props['width'], props['height'], props['image'])
+        building = Building(props['width'] + random.randint(25,75), props['height'], props['image'])
         self.buildings.append(building)
         return building
 
