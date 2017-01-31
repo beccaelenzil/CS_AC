@@ -19,8 +19,9 @@ class Building(pygame.sprite.Sprite):
         self.x = 700
         self.y = 500-height
 
-    def move(self):
-        self.x += -0.5
+    def move(self, delta=0.5):
+        self.x -= delta
+
 
     def draw(self, screen):
         screen.blit(self.image, [self.x, self.y])
@@ -32,9 +33,10 @@ class Person():
         self.height = height
         self.x = 700
         self.y = 500-height
+
     def jump(self):
-
-
+       if self.event.type == pygame.K_SPACE or self.event.type == pygame.K_UP:
+           self.y += 0.1
 
 
 class Scene():
@@ -43,6 +45,12 @@ class Scene():
         self.width = width
         self.height = height
         self.screen = screen
+        x = width
+        while x > 0:
+            building = self.create_building()
+            building.move(x)
+            building.draw(screen)
+            x -= random.randint(width + 10, width+50)
 
     def next_tick(self):
         for building in self.buildings:
@@ -68,6 +76,7 @@ class Scene():
         props = building_props[building_props_index]
         building = Building(props['width'], props['height'], props['image'])
         self.buildings.append(building)
+        return building
 
     def remove_building(self, building):
         self.buildings.remove(building)
