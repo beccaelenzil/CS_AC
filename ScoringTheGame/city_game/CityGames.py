@@ -1,6 +1,8 @@
 import pygame
 import random
 
+from building import Building
+
 # Define some colors
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
@@ -9,29 +11,14 @@ GREEN = (0, 255, 0)
 BLUE = (0, 0, 255)
 
 
-class Building(pygame.sprite.Sprite):
-    def __init__(self, width, height, image):
-        super(Building, self).__init__()
-
-        self.width = width
-        self.height = height
-        self.image = image
-        self.x = 700
-        self.y = 500-height
-
-    def move(self, delta=0.5):
-        self.x -= delta
-
-
-    def draw(self, screen):
-        screen.blit(self.image, [self.x, self.y])
-
 
 class Person():
     def __init__(self, width, height, image):
         self.width = width
         self.height = height
         self.image = image
+        self.x = 0
+        self.y = 500
 
     def move(self, delta = 0.5):
         self.x += delta
@@ -39,6 +26,10 @@ class Person():
     def jump(self):
        if self.event.type == pygame.K_SPACE or self.event.type == pygame.K_UP:
            self.y += 0.1
+
+    def draw(self, screen):
+        screen.blit(self.image, [self.x, self.y])
+
 
 
 class Scene():
