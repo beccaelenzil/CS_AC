@@ -4,6 +4,8 @@ import random
 from building import Building
 from person import Person
 
+#building properties
+
 # widths:
 width1 = 50
 width2 = 75
@@ -17,6 +19,7 @@ height3 = 175
 height4 = 225
 height5 = 250
 
+#potential next heights:
 height_transitions = {
     height1: [height1, height2, height3],
     height2: [height1, height2, height3, height4],
@@ -25,6 +28,7 @@ height_transitions = {
     height5: [height3, height4, height5],
 }
 
+#potential buildings
 def calc_building_props():
     building_props = [
         { 'width': width1, 'height': height1, 'image': pygame.image.load("images/50x100.png").convert() },
