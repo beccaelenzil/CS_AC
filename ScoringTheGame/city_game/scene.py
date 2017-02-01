@@ -4,13 +4,47 @@ import random
 from building import Building
 from person import Person
 
+# widths:
+width1 = 50
+width2 = 75
+width3 = 100
+width4 = 125
+
+# heights:
+height1 = 100
+height2 = 150
+height3 = 175
+height4 = 225
+height5 = 250
+
+height_transitions = {
+    height1: [height1, height2, height3],
+    height2: [height1, height2, height3, height4],
+    height3: [height1, height2, height3, height4, height5],
+    height4: [height2, height3, height4, height5],
+    height5: [height3, height4, height5],
+}
+
+def calc_building_props():
+    building_props = [
+        { 'width': width1, 'height': height1, 'image': pygame.image.load("images/50x100.png").convert() },
+        { 'width': width4, 'height': height1, 'image': pygame.image.load("images/125x150.png").convert() },
+        { 'width': width2, 'height': height2, 'image': pygame.image.load("images/75x150.png").convert() },
+        { 'width': width3, 'height': height3, 'image': pygame.image.load("images/100x175.png").convert() },
+        { 'width': width2, 'height': height4, 'image': pygame.image.load("images/75x225.png").convert() },
+        { 'width': width3, 'height': height5, 'image': pygame.image.load("images/100x250.png").convert() },
+    ]
+    return building_props
+
 class Scene():
-    def __init__(self, width, height, screen, building_props):
+    def __init__(self, width, height, screen):
         self.buildings = []
         self.width = width
         self.height = height
         self.screen = screen
-        self.building_props = building_props
+        self.building_props = calc_building_props()
+        self.last_height = height3
+
         x = width
         while x > 100:
             building = self.create_building()
@@ -39,11 +73,17 @@ class Scene():
             return False
 
     def create_building(self):
-        num_buildings = len(self.building_props)
+        #get legal transition heights for last height:
+        legal_heights = height_transitions[self.last_height]
+
+        #get buildings with legal heights:
+        legal_building_props = [bp for bp in self.building_props if bp['height'] in legal_heights]
+        num_buildings = len(legal_building_props)
         building_props_index = random.randint(0, num_buildings - 1)
-        props = self.building_props[building_props_index]
+        props = legal_building_props[building_props_index]
         building = Building(props['width'] + random.randint(25,75), props['height'], props['image'])
         self.buildings.append(building)
+        self.last_height = building.height
         return building
 
     def remove_building(self, building):
@@ -67,7 +107,4 @@ class Scene():
         props = self.building_props[0]
         person = Person(0, props['height'], props['image'])
         return person
-
-
-
 
