@@ -68,6 +68,8 @@ class Scene():
         if self.can_new_building_be_created():
             self.create_building()
         self.person.draw(self.screen)
+        self.person.update_position()
+
 
 
     #building directions

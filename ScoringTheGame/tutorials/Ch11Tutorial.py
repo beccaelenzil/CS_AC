@@ -24,7 +24,7 @@ clock = pygame.time.Clock()
 background_image = pygame.image.load("sky_image.jpg").convert()
 player_image = pygame.image.load("hot_air_balloon.png").convert()
 player_image.set_colorkey(WHITE)
-click_sound = pygame.mixer.Sound("Chirp.wav")
+#click_sound = pygame.mixer.Sound("Chirp.wav")
 
 
 # -------- Main Program Loop -----------
