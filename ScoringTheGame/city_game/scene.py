@@ -1,5 +1,6 @@
 import pygame
 import random
+pygame.init()
 
 from building import Building
 from person import Person
@@ -31,7 +32,7 @@ height_transitions = {
 #potential buildings
 def calc_building_props():
     building_props = [
-        { 'width': width1, 'height': height1, 'image': pygame.image.load("images/50x100.png").convert() },
+        #{ 'width': width1, 'height': height1, 'image': pygame.image.load("images/50x100.png").convert() },
         { 'width': width4, 'height': height1, 'image': pygame.image.load("images/125x150.png").convert() },
         { 'width': width2, 'height': height2, 'image': pygame.image.load("images/75x150.png").convert() },
         { 'width': width3, 'height': height3, 'image': pygame.image.load("images/100x175.png").convert() },
@@ -48,6 +49,7 @@ class Scene():
         self.screen = screen
         self.building_props = calc_building_props()
         self.last_height = height3
+        self.person = Person()
 
         x = width
         while x > 100:
@@ -65,6 +67,7 @@ class Scene():
                 building.draw(self.screen)
         if self.can_new_building_be_created():
             self.create_building()
+        self.person.draw(self.screen)
 
 
     #building directions
@@ -107,8 +110,4 @@ class Scene():
 
     #person directions
 
-    def create_person(self):
-        props = self.building_props[0]
-        person = Person(0, props['height'], props['image'])
-        return person
 

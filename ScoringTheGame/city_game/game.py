@@ -1,7 +1,5 @@
 import pygame
-
 from scene import Scene
-
 
 class Game():
     def setup(self):
@@ -18,6 +16,12 @@ class Game():
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     done = True
+                elif event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_SPACE:
+                        self.scene.person.jump()
+                    #elif event.type == pygame.K_RIGHT:
+                        #print "got up event"
+                        self.scene.person.jump()
                 #elif event.type == pygame.MOUSEBUTTONDOWN:
                     #click_sound.play()
 

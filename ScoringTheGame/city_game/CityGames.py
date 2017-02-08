@@ -10,11 +10,6 @@ BLUE = (0, 0, 255)
 
 pygame.init()
 
-
-person_props = [
-    {'width': 30, 'height':30, 'image':pygame.image.load("images/dude.png").convert() }
-]
-
 game = Game()
 game.setup()
 game.run()
