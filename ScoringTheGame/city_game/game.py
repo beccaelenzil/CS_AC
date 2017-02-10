@@ -21,7 +21,7 @@ class Game():
                         self.scene.person.jump()
                     #elif event.type == pygame.K_RIGHT:
                         #print "got up event"
-                        self.scene.person.jump()
+                        #self.scene.person.jump()
                 #elif event.type == pygame.MOUSEBUTTONDOWN:
                     #click_sound.play()
 

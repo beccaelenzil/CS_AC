@@ -50,6 +50,7 @@ class Scene():
         self.building_props = calc_building_props()
         self.last_height = height3
         self.person = Person()
+        self.dt = 0
 
         x = width
         while x > 100:
@@ -69,8 +70,7 @@ class Scene():
             self.create_building()
         self.person.draw(self.screen)
         self.person.update_position()
-
-
+        self.dt += 1
 
     #building directions
 
