@@ -72,6 +72,7 @@ class Scene():
         self.person.update_position()
         self.dt += 1
 
+
     #building directions
 
     def can_new_building_be_created(self):

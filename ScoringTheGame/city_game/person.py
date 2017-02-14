@@ -13,16 +13,20 @@ class Person():
         self.image = pygame.image.load("images/dude.png").convert()
         self.image.set_colorkey(WHITE)
         self.velocity = 0
-        self.acceleration = 2
+        self.acceleration = 0.1
 
     def move(self, delta = 0.5):
         self.x += delta
 
     def jump(self):
-        self.acceleration = -5
+        self.velocity = -5
 
-    def update_position(self, dt = 1):
-        self.y = 0.5 * self.acceleration * (dt) + self.velocity * dt + self.y
+    def update_position(self):
+        new_y = self.acceleration + self.velocity + self.y
+        new_velocity = self.acceleration + self.velocity
+        self.y = new_y
+        self.velocity = new_velocity
+
 
     def draw(self, screen):
         screen.blit(self.image, [self.x, self.y])
