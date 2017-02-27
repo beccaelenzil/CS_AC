@@ -10,8 +10,15 @@ class Building(pygame.sprite.Sprite):
         self.x = 700
         self.y = 500-height
 
+
     def move(self, delta=0.5):
         self.x -= delta
 
     def draw(self, screen):
         screen.blit(self.image, [self.x, self.y])
+
+    def left(self):
+        return self.x
+
+    def right(self):
+        return self.x + self.width

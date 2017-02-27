@@ -1,5 +1,5 @@
 import pygame
-import scene
+from scene import Scene
 
 width = 30
 height = 30
@@ -15,6 +15,12 @@ class Person():
         self.velocity = 0
         self.acceleration = 0.1
 
+    def left(self):
+        return self.x
+
+    def right(self):
+        return self.x + width
+
     def move(self, delta = 0.5):
         self.x += delta
 
@@ -23,7 +29,10 @@ class Person():
 
     def update_position(self):
         new_y = self.acceleration + self.velocity + self.y
-        new_velocity = self.acceleration + self.velocity
+        if new_y == self.scene.ground_height:
+            new_velocity = 0
+        else:
+            new_velocity = self.acceleration + self.velocity
         self.y = new_y
         self.velocity = new_velocity
 

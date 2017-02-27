@@ -51,6 +51,7 @@ class Scene():
         self.last_height = height3
         self.person = Person()
         self.dt = 0
+        self.ground_height = 0
 
         x = width
         while x > 100:
@@ -60,17 +61,24 @@ class Scene():
             x -= random.randint(building.width+10, building.width+50)
 
     def next_tick(self):
+        person = self.person
         for building in self.buildings:
             building.move()
             if self.building_is_off_screen(building):
                 self.remove_building(building)
             else:
                 building.draw(self.screen)
+            if self.building_is_under_person(building, person):
+                self.building_is_ground(building)
+
         if self.can_new_building_be_created():
             self.create_building()
+
+
         self.person.draw(self.screen)
         self.person.update_position()
-        self.dt += 1
+
+
 
 
     #building directions
@@ -100,16 +108,22 @@ class Scene():
         self.buildings.remove(building)
 
     def building_is_on_screen(self, building):
-        if building.x<700 - building.width:
+        return building.x<700 - building.width
+
+    def building_is_off_screen(self, building):
+        return building.x < 0 - self.width
+
+
+    def building_is_under_person(self, building, person):
+        if building.left < person.left:
+            return True
+        elif building.right > person.right:
             return True
         else:
             return False
 
-    def building_is_off_screen(self, building):
-        if building.x< 0 - self.width:
-            return True
-        else:
-            return False
+    def building_is_ground(self, building):
+        self.ground_height = building.height
 
     #person directions
 
