@@ -4,7 +4,7 @@ from scene import Scene
 class Game():
     def setup(self):
         self.scene = Scene(700, 500, screen)
-        self.scene.create_building()
+        #self.scene.create_building()
 
     def run(self):
         # Loop until the user clicks the close button.

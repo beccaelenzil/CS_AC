@@ -10,6 +10,11 @@ class Building(pygame.sprite.Sprite):
         self.x = 700
         self.y = 500-height
 
+    def top(self):
+        return 500 - self.height
+
+    def bottom(self):
+        return 500
 
     def move(self, delta=0.5):
         self.x -= delta

@@ -33,7 +33,7 @@ height_transitions = {
 def calc_building_props():
     building_props = [
         #{ 'width': width1, 'height': height1, 'image': pygame.image.load("images/50x100.png").convert() },
-        { 'width': width4, 'height': height1, 'image': pygame.image.load("images/125x150.png").convert() },
+        { 'width': width4, 'height': height1, 'image': pygame.image.load("images/125x100.png").convert() },
         { 'width': width2, 'height': height2, 'image': pygame.image.load("images/75x150.png").convert() },
         { 'width': width3, 'height': height3, 'image': pygame.image.load("images/100x175.png").convert() },
         { 'width': width2, 'height': height4, 'image': pygame.image.load("images/75x225.png").convert() },
@@ -49,35 +49,53 @@ class Scene():
         self.screen = screen
         self.building_props = calc_building_props()
         self.last_height = height3
-        self.person = Person()
-        self.dt = 0
-        self.ground_height = 0
+        self.person = Person(self.height)
+        self.building_under_person = []
 
-        x = width
-        while x > 100:
-            building = self.create_building()
-            building.move(x)
-            building.draw(screen)
-            x -= random.randint(building.width+10, building.width+50)
+        building = self.create_building()
+        building.move(width - 150)
+        #x = width
+        # while x > 100:
+        #     building = self.create_building()
+        #     building.move(x)
+        #     building.draw(screen)
+        #     x -= random.randint(building.width+10, building.width+50)
 
     def next_tick(self):
         person = self.person
+        person.update_max_y(self.height)
         for building in self.buildings:
             building.move()
+            #print "building:" , building.left(), building.right(), building.width, building.height
+            #print "person:" , person.left(), person.right(), person.y
+
             if self.building_is_off_screen(building):
                 self.remove_building(building)
             else:
                 building.draw(self.screen)
-            if self.building_is_under_person(building, person):
-                self.building_is_ground(building)
 
-        if self.can_new_building_be_created():
-            self.create_building()
+            under = self.building_is_under_person(building, person)
+            half_under = self.building_half_under_person(building, person)
+
+            print "half_under:", half_under
+            if under or half_under:
+                collision = self.detect_collision(building, person)
+                if collision:
+                    #print "collision", building.top(), person.bottom()
+                    person.update_max_y(building.top())
+
+
+
+
+
+        #if self.can_new_building_be_created():
+            #self.create_building()
+
+
 
 
         self.person.draw(self.screen)
         self.person.update_position()
-
 
 
 
@@ -93,7 +111,6 @@ class Scene():
     def create_building(self):
         #get legal transition heights for last height:
         legal_heights = height_transitions[self.last_height]
-
         #get buildings with legal heights:
         legal_building_props = [bp for bp in self.building_props if bp['height'] in legal_heights]
         num_buildings = len(legal_building_props)
@@ -114,17 +131,23 @@ class Scene():
         return building.x < 0 - self.width
 
 
+
+    # collision directions
+
     def building_is_under_person(self, building, person):
-        if building.left < person.left:
-            return True
-        elif building.right > person.right:
-            return True
-        else:
-            return False
+        return building.left() <= person.left() and person.right() <= building.right()
 
-    def building_is_ground(self, building):
-        self.ground_height = building.height
+    def building_half_under_person(self, building, person):
+        return person.left() < building.left() <= person.right() or person.left() <= building.right() < person.right()
 
-    #person directions
+    def building_not_under_person(self, building, person):
+        return person.right() < building.left() or person.left() > building.right()
+
+    def detect_collision(self, building, person):
+        return building.top() <= person.bottom()
+
+
+
+
 
 
