@@ -52,22 +52,20 @@ class Scene():
         self.person = Person(self.height)
         self.building_under_person = []
 
-        building = self.create_building()
-        building.move(width - 150)
-        #x = width
-        # while x > 100:
-        #     building = self.create_building()
-        #     building.move(x)
-        #     building.draw(screen)
-        #     x -= random.randint(building.width+10, building.width+50)
+        x = width
+        while x > 100:
+            building = self.create_building()
+            building.move(x)
+            building.draw(screen)
+            x -= random.randint(building.width+10, building.width+50)
 
     def next_tick(self):
         person = self.person
         person.update_max_y(self.height)
         for building in self.buildings:
             building.move()
-            #print "building:" , building.left(), building.right(), building.width, building.height
-            #print "person:" , person.left(), person.right(), person.y
+            print "building:" , building.left(), building.right(), building.width, building.height
+            print "person:" , person.left(), person.right(), person.y
 
             if self.building_is_off_screen(building):
                 self.remove_building(building)
@@ -77,7 +75,7 @@ class Scene():
             under = self.building_is_under_person(building, person)
             half_under = self.building_half_under_person(building, person)
 
-            print "half_under:", half_under
+            print "under:", under,  half_under
             if under or half_under:
                 collision = self.detect_collision(building, person)
                 if collision:
@@ -88,8 +86,8 @@ class Scene():
 
 
 
-        #if self.can_new_building_be_created():
-            #self.create_building()
+        if self.can_new_building_be_created():
+            self.create_building()
 
 
 
@@ -116,7 +114,7 @@ class Scene():
         num_buildings = len(legal_building_props)
         building_props_index = random.randint(0, num_buildings - 1)
         props = legal_building_props[building_props_index]
-        building = Building(props['width'] + random.randint(25,75), props['height'], props['image'])
+        building = Building(props['width'], props['height'], props['image'])
         self.buildings.append(building)
         self.last_height = building.height
         return building
@@ -125,7 +123,7 @@ class Scene():
         self.buildings.remove(building)
 
     def building_is_on_screen(self, building):
-        return building.x<700 - building.width
+        return building.x<700 - building.rand_width()
 
     def building_is_off_screen(self, building):
         return building.x < 0 - self.width

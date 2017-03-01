@@ -12,7 +12,7 @@ class Person():
         self.image = pygame.image.load("images/dude.png").convert()
         self.image.set_colorkey(WHITE)
         self.velocity = 0
-        self.acceleration = 0.1
+        self.acceleration = 0.2
         self.max_y = max_y
         #self.scene = Scene(700, 500, screen)
 
