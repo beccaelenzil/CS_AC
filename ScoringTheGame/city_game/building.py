@@ -5,12 +5,11 @@ class Building(pygame.sprite.Sprite):
     def __init__(self, width, height, image):
         super(Building, self).__init__()
         self.width = width
-        print 'width', self.width
+        #print 'width', self.width
         self.height = height
         self.image = image
         self.x = 700
         self.y = 500-height
-
 
     def top(self):
         return 500 - self.height

@@ -55,6 +55,13 @@ class Person():
     def update_max_y(self, new_max_y):
         self.max_y = new_max_y
 
+    def trip(self):
+        self.velocity = 0
+
+    def regenerate(self):
+        self.x = 100
+        self.y = 60
+
 
 
     def draw(self, screen):

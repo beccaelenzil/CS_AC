@@ -1,9 +1,11 @@
 import pygame
 from scene import Scene
+from score_keeper import ScoreKeeper
 
 class Game():
     def setup(self):
-        self.scene = Scene(700, 500, screen)
+        self.score_keeper = ScoreKeeper()
+        self.scene = Scene(700, 500, screen, self.score_keeper)
         #self.scene.create_building()
 
     def run(self):
@@ -45,6 +47,8 @@ class Game():
             # Copy image to screen:
             #screen.blit(player_image, [x, y])
             self.scene.next_tick()
+
+
 
             # --- Drawing code should go here
             # Process each snow flake in the list

@@ -4,6 +4,7 @@ pygame.init()
 
 from building import Building
 from person import Person
+from score_display import ScoreDisplay
 
 #building properties
 
@@ -42,7 +43,7 @@ def calc_building_props():
     return building_props
 
 class Scene():
-    def __init__(self, width, height, screen):
+    def __init__(self, width, height, screen, score_keeper):
         self.buildings = []
         self.width = width
         self.height = height
@@ -51,6 +52,9 @@ class Scene():
         self.last_height = height3
         self.person = Person(self.height)
         self.building_under_person = []
+        self.score_keeper = score_keeper
+        self.score_display = ScoreDisplay(score_keeper, screen)
+
 
         x = width
         while x > 100:
@@ -62,38 +66,46 @@ class Scene():
     def next_tick(self):
         person = self.person
         person.update_max_y(self.height)
+        self.move_and_draw_buildings()
+        self.detect_collisions()
+        if self.can_new_building_be_created():
+            self.create_building()
+        self.person.draw(self.screen)
+        self.person.update_position()
+        self.update_score_display()
+
+    def move_and_draw_buildings(self):
         for building in self.buildings:
             building.move()
-            print "building:" , building.left(), building.right(), building.width, building.height
-            print "person:" , person.left(), person.right(), person.y
+            #print "building:" , building.left(), building.right(), building.width, building.height
+            #print "person:" , person.left(), person.right(), person.y
 
             if self.building_is_off_screen(building):
                 self.remove_building(building)
+                self.score_keeper.increment_score()
             else:
                 building.draw(self.screen)
 
-            under = self.building_is_under_person(building, person)
-            half_under = self.building_half_under_person(building, person)
+    def detect_collisions(self):
+        person = self.person
+        for building in self.buildings:
+            if self.detect_side_collision(building, person):
+                #score_keeper.die()
+                self.person_dies()
 
-            print "under:", under,  half_under
-            if under or half_under:
-                collision = self.detect_collision(building, person)
-                if collision:
+                print "side collision:", "p: [", person.bottom(), "] b: [", building.top(), building.left(), building.right(), "]"
+                return
+            elif self.detect_top_collision(building, person):
+                #print "collision", building.top(), person.bottom()
+                self.person.update_max_y(building.top())
+                #print "top collision", building.top()
+                #print "top collision:", "p: [", person.bottom(), "] b: [", building.top(), building.left(), building.right(), "]"
+                return
+          #if half_under:
+                #collision = self.detect_collision(building, person)
+                #if collision:
                     #print "collision", building.top(), person.bottom()
-                    person.update_max_y(building.top())
-
-
-
-
-
-        if self.can_new_building_be_created():
-            self.create_building()
-
-
-
-
-        self.person.draw(self.screen)
-        self.person.update_position()
+                   # person.trip()
 
 
 
@@ -126,26 +138,39 @@ class Scene():
         return building.x<700 - building.rand_width()
 
     def building_is_off_screen(self, building):
-        return building.x < 0 - self.width
+        return building.right() < 0
 
 
 
     # collision directions
 
-    def building_is_under_person(self, building, person):
+    def building_fully_under_person(self, building, person):
         return building.left() <= person.left() and person.right() <= building.right()
 
     def building_half_under_person(self, building, person):
         return person.left() < building.left() <= person.right() or person.left() <= building.right() < person.right()
 
+    def building_under_person(self, building, person):
+        return self.building_fully_under_person(building, person) or self.building_half_under_person(building, person)
+
     def building_not_under_person(self, building, person):
         return person.right() < building.left() or person.left() > building.right()
 
-    def detect_collision(self, building, person):
-        return building.top() <= person.bottom()
+    def detect_top_collision(self, building, person):
+        return (building.top() <= person.bottom()) and (self.building_fully_under_person(building, person) or self.building_half_under_person(building, person))
+
+    def detect_side_collision(self, building, person):
+        return building.top() < person.bottom() and person.left() < building.left() and building.left() <= person.right() < (building.left()+1)
 
 
+    #score directions
 
+    def update_score_display(self):
+        self.score_display.draw()
+
+    def person_dies(self):
+        self.score_keeper.die()
+        self.person.regenerate()
 
 
 
