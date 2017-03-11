@@ -5,7 +5,7 @@ pygame.init()
 from building import Building
 from person import Person
 from score_display import ScoreDisplay
-
+from sound_player import SoundPlayer
 #building properties
 
 # widths:
@@ -22,11 +22,19 @@ height4 = 225
 height5 = 250
 
 #potential next heights:
-height_transitions = {
+old_height_transitions = {
     height1: [height1, height2, height3],
     height2: [height1, height2, height3, height4],
     height3: [height1, height2, height3, height4, height5],
     height4: [height2, height3, height4, height5],
+    height5: [height3, height4, height5],
+}
+
+height_transitions = {
+    height1: [height1, height2, height3],
+    height2: [height1, height2, height3],
+    height3: [height2, height3, height4],
+    height4: [height3, height4, height5],
     height5: [height3, height4, height5],
 }
 
@@ -43,7 +51,7 @@ def calc_building_props():
     return building_props
 
 class Scene():
-    def __init__(self, width, height, screen, score_keeper):
+    def __init__(self, width, height, screen, score_keeper, sound_player):
         self.buildings = []
         self.width = width
         self.height = height
@@ -54,59 +62,77 @@ class Scene():
         self.building_under_person = []
         self.score_keeper = score_keeper
         self.score_display = ScoreDisplay(score_keeper, screen)
+        self.sound_player = sound_player
 
 
         x = width
-        while x > 100:
+        while x > 0:
             building = self.create_building()
             building.move(x)
             building.draw(screen)
-            x -= random.randint(building.width+10, building.width+50)
+            x -= random.randint(building.width+50, building.width+100)
 
     def next_tick(self):
         person = self.person
-        person.update_max_y(self.height)
-        self.move_and_draw_buildings()
+        person.update_max_y(self.height+person.height)
+        self.draw_buildings()
+        self.detect_person_state()
         self.detect_collisions()
         if self.can_new_building_be_created():
             self.create_building()
         self.person.draw(self.screen)
-        self.person.update_position()
+        self.person.update_position(self.score_keeper.acceleration)
         self.update_score_display()
 
-    def move_and_draw_buildings(self):
-        for building in self.buildings:
-            building.move()
-            #print "building:" , building.left(), building.right(), building.width, building.height
-            #print "person:" , person.left(), person.right(), person.y
+    def detect_person_state(self):
+        if self.score_keeper.is_person_alive():
+            self.move_buildings()
+        elif self.score_keeper.should_person_be_regenerated():
+            if self.score_keeper.get_remaining_lives()>0:
+                self.person.regenerate()
+                self.score_keeper.regenerate_person()
+        else:
+            self.score_keeper.is_person_alive()
 
+
+    def draw_buildings(self):
+        for building in self.buildings:
             if self.building_is_off_screen(building):
                 self.remove_building(building)
                 self.score_keeper.increment_score()
             else:
                 building.draw(self.screen)
 
+    def move_buildings(self):
+        for building in self.buildings:
+            building.move(self.score_keeper.delta)
+
+    def calculate_building_speed(self):
+        if self.score_keeper.increment_level():
+            self.delta += 0.5
+
     def detect_collisions(self):
         person = self.person
         for building in self.buildings:
             if self.detect_side_collision(building, person):
-                #score_keeper.die()
                 self.person_dies()
-
-                print "side collision:", "p: [", person.bottom(), "] b: [", building.top(), building.left(), building.right(), "]"
+                #print "side collision:", "p: [", person.bottom(), "] b: [", building.top(), building.left(), building.right(), "]"
                 return
             elif self.detect_top_collision(building, person):
-                #print "collision", building.top(), person.bottom()
                 self.person.update_max_y(building.top())
-                #print "top collision", building.top()
-                #print "top collision:", "p: [", person.bottom(), "] b: [", building.top(), building.left(), building.right(), "]"
+                self.sound_player.play_running_sound()
                 return
+
+        if person.bottom <= self.height:
+            self.person_dies()
+            self.person.regenerate()
+
+
           #if half_under:
                 #collision = self.detect_collision(building, person)
                 #if collision:
                     #print "collision", building.top(), person.bottom()
                    # person.trip()
-
 
 
     #building directions
@@ -135,11 +161,13 @@ class Scene():
         self.buildings.remove(building)
 
     def building_is_on_screen(self, building):
-        return building.x<700 - building.rand_width()
+        return building.x<700 - building.rand_width(self.score_keeper.lower_limit, self.score_keeper.upper_limit)
 
     def building_is_off_screen(self, building):
         return building.right() < 0
 
+    def building_stop(self, building):
+        building.move(0)
 
 
     # collision directions
@@ -170,7 +198,13 @@ class Scene():
 
     def person_dies(self):
         self.score_keeper.die()
-        self.person.regenerate()
+        self.sound_player.play_falling_sound()
+
+    def game_over(self):
+        if self.score_keeper.game_over():
+            self.score_display
+
+
 
 
 

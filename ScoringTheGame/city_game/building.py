@@ -17,14 +17,14 @@ class Building(pygame.sprite.Sprite):
     def bottom(self):
         return 500
 
-    def move(self, delta=0.8):
+    def move(self, delta):
         self.x -= delta
 
     def draw(self, screen):
         screen.blit(self.image, [self.x, self.y])
 
-    def rand_width(self):
-        return self.width + random.randint(50,100)
+    def rand_width(self, lower_limit, upper_limit):
+        return self.width + random.randint(lower_limit,upper_limit)
 
     def left(self):
         return self.x

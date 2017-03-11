@@ -1,16 +1,19 @@
 import pygame
 from scene import Scene
 from score_keeper import ScoreKeeper
+from sound_player import SoundPlayer
+
 
 class Game():
     def setup(self):
         self.score_keeper = ScoreKeeper()
-        self.scene = Scene(700, 500, screen, self.score_keeper)
-        #self.scene.create_building()
+        self.sound_player = SoundPlayer()
+        self.scene = Scene(700, 500, screen, self.score_keeper, self.sound_player)
 
     def run(self):
         # Loop until the user clicks the close button.
         done = False
+        self.sound_player.play_theme_song()
 
         # -------- Main Program Loop -----------
         while not done:
@@ -20,7 +23,8 @@ class Game():
                     done = True
                 elif event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_SPACE:
-                        self.scene.person.jump()
+                        self.scene.person.jump(self.score_keeper.velocity)
+                        self.sound_player.play_jumping_sound()
                     #elif event.type == pygame.K_RIGHT:
                         #print "got up event"
                         #self.scene.person.jump()
@@ -36,7 +40,19 @@ class Game():
 
             # If you want a background image, replace this clear with blit'ing the
             # background image.
-            screen.blit(background_image, [0, 0])
+            if self.score_keeper.get_level() == 1 :
+                screen.blit(background_image, [0, 0])
+            elif self.score_keeper.get_level() == 2:
+                screen.blit(level_2_background, [0, 0])
+            elif self.score_keeper.get_level() == 3:
+                screen.blit(level_3_background, [0, 0])
+            elif self.score_keeper.get_level() == 4:
+                screen.blit(level_4_background, [0, 0])
+            elif self.score_keeper.get_level() == 5:
+                screen.blit(level_5_background, [0, 0])
+            else:
+                screen.blit(level_5_background, [0, 0])
+
 
             # Get the current mouse position. This returns the position
             # as a list of two numbers.
@@ -48,10 +64,7 @@ class Game():
             #screen.blit(player_image, [x, y])
             self.scene.next_tick()
 
-
-
             # --- Drawing code should go here
-            # Process each snow flake in the list
 
             # --- Go ahead and update the screen with what we've drawn.
             pygame.display.flip()
@@ -76,4 +89,9 @@ clock = pygame.time.Clock()
 
 #load images
 background_image = pygame.image.load('images/city_scape_bgd.png').convert()
-
+level_2_background = pygame.image.load('images/level_2_bgd.png').convert()
+level_3_background = pygame.image.load('images/level_3_bgd.png').convert()
+level_3_background = pygame.image.load('images/level_3_bgd.png').convert()
+level_4_background = pygame.image.load('images/level_4_bgd.png').convert()
+level_5_background = pygame.image.load('images/level_5_bgd.png').convert()
+level_6_background = pygame.image.load('images/level_6_bgd.png').convert()
