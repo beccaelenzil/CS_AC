@@ -23,8 +23,9 @@ class Game():
                     done = True
                 elif event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_SPACE:
-                        self.scene.person.jump(self.score_keeper.velocity)
+                        self.sound_player.running_sound.stop()
                         self.sound_player.play_jumping_sound()
+                        self.scene.person.jump(self.score_keeper.velocity)
                     #elif event.type == pygame.K_RIGHT:
                         #print "got up event"
                         #self.scene.person.jump()

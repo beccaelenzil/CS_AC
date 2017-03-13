@@ -53,7 +53,7 @@ class ScoreKeeper():
         #return self.person_is_dead == 0
 
     def should_person_be_regenerated(self):
-        return self.person_is_dead > 60*3
+        return self.person_is_dead > 60*5
 
     def should_buildings_move(self):
         return self.person_is_dead > 60*4

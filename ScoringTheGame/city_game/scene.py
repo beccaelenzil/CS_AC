@@ -91,8 +91,11 @@ class Scene():
             if self.score_keeper.get_remaining_lives()>0:
                 self.person.regenerate()
                 self.score_keeper.regenerate_person()
+                self.sound_player.falling_sound.stop()
+
         else:
             self.score_keeper.is_person_alive()
+
 
 
     def draw_buildings(self):
@@ -116,6 +119,7 @@ class Scene():
         for building in self.buildings:
             if self.detect_side_collision(building, person):
                 self.person_dies()
+                self.sound_player.play_falling_sound()
                 #print "side collision:", "p: [", person.bottom(), "] b: [", building.top(), building.left(), building.right(), "]"
                 return
             elif self.detect_top_collision(building, person):
@@ -188,7 +192,7 @@ class Scene():
         return (building.top() <= person.bottom()) and (self.building_fully_under_person(building, person) or self.building_half_under_person(building, person))
 
     def detect_side_collision(self, building, person):
-        return building.top() < person.bottom() and person.left() < building.left() and building.left() <= person.right() < (building.left()+1)
+        return building.top() < person.bottom() and person.left() <= building.left() and building.left() <= person.right() < (building.left()+1)
 
 
     #score directions
@@ -198,11 +202,12 @@ class Scene():
 
     def person_dies(self):
         self.score_keeper.die()
-        self.sound_player.play_falling_sound()
+
 
     def game_over(self):
         if self.score_keeper.game_over():
             self.score_display
+            self.sound_player.falling_sound.stop()
 
 
 
